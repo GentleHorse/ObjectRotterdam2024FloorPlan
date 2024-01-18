@@ -1,3 +1,4 @@
+import million from "million/compiler";
 import react from '@vitejs/plugin-react'
 import { transformWithEsbuild } from 'vite'
 import glsl from 'vite-plugin-glsl'
@@ -8,6 +9,9 @@ export default {
     base: './',
     plugins:
     [
+        // Optimize performance
+        million.vite({ auto: true }),
+
         // React support
         react(),
 
