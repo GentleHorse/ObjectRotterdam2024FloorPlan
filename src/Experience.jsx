@@ -6,6 +6,7 @@ import HakaBuilding from "./components/hakaBuilding/HakaBuilding.jsx";
 import WorksToshi from "./components/individualWorks/WorksToshi.jsx";
 import WorksSatomi from "./components/individualWorks/WorksSatomi.jsx";
 import WorksJeroen from "./components/individualWorks/WorksJeroen.jsx";
+import Marina from "./components/marina/Marina.jsx";
 
 export default function Experience() {
   return (
@@ -13,7 +14,7 @@ export default function Experience() {
       <OrbitControls makeDefault />
 
       {/* <Perf position="top-left" /> */}
-      {/* <axesHelper args={[30]} /> */}
+      {/* <axesHelper args={[18]} /> */}
       {/* <Camera /> */}
 
       <directionalLight position={[4, 4, 1]} intensity={4.5} />
@@ -29,6 +30,8 @@ export default function Experience() {
         <WorksSatomi />
 
         <WorksJeroen />
+
+        <Marina />
       </group>
     </>
   );
