@@ -1,8 +1,4 @@
-import { useState } from "react";
-import {
-  Environment,
-  OrbitControls,
-} from "@react-three/drei";
+import { Environment, OrbitControls } from "@react-three/drei";
 import { Perf } from "r3f-perf";
 
 import Camera from "./components/utils/Camera.jsx";
@@ -12,15 +8,11 @@ import WorksSatomi from "./components/individual-works/WorksSatomi.jsx";
 import WorksJeroen from "./components/individual-works/WorksJeroen.jsx";
 
 export default function Experience() {
-
-
-
-
   return (
     <>
       <OrbitControls makeDefault />
 
-      <Perf position="top-left" />
+      {/* <Perf position="top-left" /> */}
       {/* <axesHelper args={[30]} /> */}
       {/* <Camera /> */}
 
