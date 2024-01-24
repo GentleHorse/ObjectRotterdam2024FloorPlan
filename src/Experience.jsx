@@ -2,7 +2,7 @@ import { Environment, OrbitControls } from "@react-three/drei";
 import { Perf } from "r3f-perf";
 
 import Camera from "./components/utils/Camera.jsx";
-import HakaBuilding from "./components/haka-building/HakaBuilding.jsx";
+import HakaBuilding from "./components/hakaBuilding/HakaBuilding.jsx";
 import WorksToshi from "./components/individualWorks/worksToshi.jsx";
 import WorksSatomi from "./components/individualWorks/WorksSatomi.jsx";
 import WorksJeroen from "./components/individualWorks/WorksJeroen.jsx";
