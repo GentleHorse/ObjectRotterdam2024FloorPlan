@@ -22,7 +22,7 @@ root.render(
       </Suspense>
     </Canvas>
     <Loader
-      barStyles={{ width: "50vw", textAlign: "center" }}
+      barStyles={{ width: "30vw" }}
       dataInterpolation={(p) =>
         `OBJECT Rotterdam 2024 floor planing for Jeroen, Satomi, Toshi loading ${p.toFixed(
           2
