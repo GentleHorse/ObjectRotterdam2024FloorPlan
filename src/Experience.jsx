@@ -14,7 +14,7 @@ export default function Experience() {
       <OrbitControls makeDefault />
 
       {/* <Perf position="top-left" /> */}
-      {/* <axesHelper args={[18]} /> */}
+      {/* <axesHelper args={[5]} /> */}
       {/* <Camera /> */}
 
       <directionalLight position={[4, 4, 1]} intensity={4.5} />
@@ -32,6 +32,15 @@ export default function Experience() {
         <WorksJeroen />
 
         <Marina />
+
+        <mesh
+          scale={[60, 50, 1]}
+          position={[0, 0.1, 0]}
+          rotation={[Math.PI * 0.5, 0, 0]}
+        >
+          <planeGeometry />
+          <meshBasicMaterial wireframe color="salmon" />
+        </mesh>
       </group>
     </>
   );
