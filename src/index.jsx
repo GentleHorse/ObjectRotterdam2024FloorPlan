@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import { Canvas } from "@react-three/fiber";
 import Experience from "./Experience.jsx";
 import { Suspense } from "react";
-import { Loader } from "@react-three/drei";
+import { Center, Loader } from "@react-three/drei";
 
 const root = ReactDOM.createRoot(document.querySelector("#root"));
 
@@ -21,6 +21,13 @@ root.render(
         <Experience />
       </Suspense>
     </Canvas>
-    <Loader />
+    <Loader
+      barStyles={{ width: "50vw", textAlign: "center" }}
+      dataInterpolation={(p) =>
+        `OBJECT Rotterdam 2024 floor planing for Jeroen, Satomi, Toshi loading ${p.toFixed(
+          2
+        )}%`
+      }
+    />
   </>
 );
