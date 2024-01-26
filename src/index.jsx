@@ -3,12 +3,15 @@ import ReactDOM from "react-dom/client";
 import { Canvas } from "@react-three/fiber";
 import Experience from "./Experience.jsx";
 import { Suspense } from "react";
-import { Center, Loader } from "@react-three/drei";
+import { Loader } from "@react-three/drei";
+import Header from "./components/header/Header.jsx";
+import Footer from "./components/footer/Footer.jsx";
 
 const root = ReactDOM.createRoot(document.querySelector("#root"));
 
 root.render(
   <>
+    <Header />
     <Canvas
       camera={{
         fov: 45,
@@ -28,5 +31,6 @@ root.render(
         )}%`
       }
     />
+    <Footer />
   </>
 );
