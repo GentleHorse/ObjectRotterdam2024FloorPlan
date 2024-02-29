@@ -24,13 +24,7 @@ root.render(
         <Experience />
       </Suspense>
     </Canvas>
-    <Loader
-      dataInterpolation={(p) =>
-        `OBJECT Rotterdam 2024 floor planing for Jeroen, Satomi, Toshi loading ${p.toFixed(
-          2
-        )}%`
-      }
-    />
+    <Loader />
     <Footer />
   </>
 );

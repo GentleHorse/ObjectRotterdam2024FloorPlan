@@ -67,7 +67,7 @@ export default function WorksJeroen() {
           geometry={piece01.nodes.exportJBPiece01.geometry}
           rotation={[0, -Math.PI * 0.5, 0]}
           position={[15, 12.5, 28]}
-          onClick={() => toggleHandler("piece01")}
+          onClick={(e) => (toggleHandler("piece01"), e.stopPropagation())}
         >
           <meshBasicMaterial
             map={bakedPiece01_Texture}
@@ -81,7 +81,7 @@ export default function WorksJeroen() {
           geometry={piece02.nodes.exportJBPiece02.geometry}
           rotation={[0, -Math.PI * 0.5, 0]}
           position={[10, 12.5, 20]}
-          onClick={() => toggleHandler("piece02")}
+          onClick={(e) => (toggleHandler("piece02"), e.stopPropagation())}
         >
           <meshBasicMaterial
             map={bakedPiece02_Texture}
@@ -95,7 +95,7 @@ export default function WorksJeroen() {
           geometry={piece03a.nodes.exportJBPiece03a.geometry}
           rotation={[0, -Math.PI * 0.5, 0]}
           position={[15, 12.5, -5]}
-          onClick={() => toggleHandler("piece03a")}
+          onClick={(e) => (toggleHandler("piece03a"), e.stopPropagation())}
         >
           <meshBasicMaterial map={bakedPiece03a_Texture} />
         </mesh>
@@ -106,7 +106,7 @@ export default function WorksJeroen() {
           geometry={piece03b.nodes.exportJBPiece03b.geometry}
           rotation={[0, -Math.PI * 0.5, 0]}
           position={[70, 12.5, -5]}
-          onClick={() => toggleHandler("piece03b")}
+          onClick={(e) => (toggleHandler("piece03b"), e.stopPropagation())}
         >
           <meshBasicMaterial
             map={bakedPiece03b_Texture}
@@ -120,7 +120,7 @@ export default function WorksJeroen() {
           geometry={piece04.nodes.exportJBPiece04.geometry}
           rotation={[0, -Math.PI * 0.5, 0]}
           position={[25, 12.5, -20]}
-          onClick={() => toggleHandler("piece04")}
+          onClick={(e) => (toggleHandler("piece04"), e.stopPropagation())}
         >
           <meshBasicMaterial
             map={bakedPiece04_Texture}

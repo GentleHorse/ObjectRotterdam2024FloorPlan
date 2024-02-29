@@ -20,7 +20,7 @@ export default function Marina() {
         scale={5}
         position={[-20, 0, 40]}
         rotation={[0, Math.PI * 0.7, 0]}
-        onClick={() => toggleHandler()}
+        onClick={(e) => (toggleHandler(), e.stopPropagation())}
       />
     </SelectMoveObject>
   );

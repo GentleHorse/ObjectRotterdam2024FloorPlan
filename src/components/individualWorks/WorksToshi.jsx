@@ -22,7 +22,7 @@ export default function WorksToshi() {
         geometry={worksToshi.nodes.bakedWorksToshi.geometry}
         position={[-18, 0, 12]}
         rotation={[0, -Math.PI * 0.5, 0]}
-        onClick={() => toggleHandler()}
+        onClick={(e) => (toggleHandler(), e.stopPropagation())}
       >
         <meshBasicMaterial map={bakedWorksTE_Texture} />
       </mesh>
