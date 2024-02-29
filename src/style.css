@@ -6,10 +6,13 @@ body {
 }
 
 .floor-plan-header {
+  width: 100vw;
   position: fixed;
   margin-top: 20px;
   margin-left: 20px;
   z-index: 10;
+  display: flex;
+  justify-content: space-between;
 }
 
 .floor-plan-header a {
@@ -33,6 +36,26 @@ body {
 .floor-plan-header p {
   font-family: "Roboto", sans-serif;
   margin-top: 10px;
+}
+
+.instruction {
+  background-color: #ffffff98;
+  padding: 10px 20px 8px 20px;
+  margin-right: 40px;
+  border-radius: 10px;
+}
+
+.instruction h1 {
+  margin-top: 0px;
+  margin-bottom: 15px;
+  color: #696767;
+}
+
+.instruction p {
+  font-size: 10.5px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  color: #434343;
 }
 
 #root {
