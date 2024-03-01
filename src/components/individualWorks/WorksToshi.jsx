@@ -17,7 +17,7 @@ export default function WorksToshi() {
   };
 
   return (
-    <SelectMoveObject isPivot={isContorl}>
+    <SelectMoveObject isPivot={isContorl} anchor={[-0.3, 0, -0.3]}>
       <mesh
         geometry={worksToshi.nodes.bakedWorksToshi.geometry}
         position={[-18, 0, 12]}

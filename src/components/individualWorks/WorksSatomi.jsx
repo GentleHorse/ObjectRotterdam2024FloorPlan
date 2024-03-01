@@ -51,7 +51,7 @@ export default function WorksSatomi() {
   return (
     <>
       <group position={[0, 0, 0]}>
-        <SelectMoveObject isPivot={isContorl.inflatableStool01}>
+        <SelectMoveObject isPivot={isContorl.inflatableStool01} rotation={[0, -Math.PI, 0]}>
           <primitive
             object={inflatableStool01.scene}
             position={[2, 0, -20]}
@@ -59,7 +59,7 @@ export default function WorksSatomi() {
           />
         </SelectMoveObject>
 
-        <SelectMoveObject isPivot={isContorl.inflatableStool02}>
+        <SelectMoveObject isPivot={isContorl.inflatableStool02} rotation={[0, -Math.PI, 0]}>
           <primitive
             object={inflatableStool02.scene}
             position={[-4, 0, -4]}
@@ -67,7 +67,7 @@ export default function WorksSatomi() {
           />
         </SelectMoveObject>
 
-        <SelectMoveObject isPivot={isContorl.edgeColorStool01}>
+        <SelectMoveObject isPivot={isContorl.edgeColorStool01} rotation={[0, -Math.PI, 0]}>
           <primitive
             object={edgeColorStool01.scene}
             position={[-12, 0, -16]}
@@ -75,7 +75,7 @@ export default function WorksSatomi() {
           />
         </SelectMoveObject>
 
-        <SelectMoveObject isPivot={isContorl.edgeColorStool02}>
+        <SelectMoveObject isPivot={isContorl.edgeColorStool02} rotation={[0, -Math.PI, 0]}>
           <primitive
             object={edgeColorStool02.scene}
             position={[-20, 0, -8]}
@@ -83,7 +83,7 @@ export default function WorksSatomi() {
           />
         </SelectMoveObject>
 
-        <SelectMoveObject isPivot={isContorl.wallObject01}>
+        <SelectMoveObject isPivot={isContorl.wallObject01} scale={60} >
           <Clone
             object={wallObject.scene}
             rotation={[0, Math.PI, 0]}
@@ -92,7 +92,7 @@ export default function WorksSatomi() {
           />
         </SelectMoveObject>
 
-        <SelectMoveObject isPivot={isContorl.wallObject02}>
+        <SelectMoveObject isPivot={isContorl.wallObject02} scale={60}>
           <Clone
             object={wallObject.scene}
             rotation={[0, Math.PI, 0]}
@@ -101,7 +101,7 @@ export default function WorksSatomi() {
           />
         </SelectMoveObject>
 
-        <SelectMoveObject isPivot={isContorl.wallObject03}>
+        <SelectMoveObject isPivot={isContorl.wallObject03} scale={60} rotation={[0, Math.PI * 0.5, 0]}>
           <Clone
             object={wallObject.scene}
             rotation={[0, -Math.PI * 0.5, 0]}
@@ -110,7 +110,7 @@ export default function WorksSatomi() {
           />
         </SelectMoveObject>
 
-        <SelectMoveObject isPivot={isContorl.wallObject04}>
+        <SelectMoveObject isPivot={isContorl.wallObject04} scale={60} rotation={[0, Math.PI * 0.5, 0]}>
           <Clone
             object={wallObject.scene}
             rotation={[0, -Math.PI * 0.5, 0]}
@@ -119,7 +119,7 @@ export default function WorksSatomi() {
           />
         </SelectMoveObject>
 
-        <SelectMoveObject isPivot={isContorl.wallObject05}>
+        <SelectMoveObject isPivot={isContorl.wallObject05} scale={60} rotation={[0, Math.PI * 0.5, 0]}>
           <Clone
             object={wallObject.scene}
             rotation={[0, -Math.PI * 0.5, 0]}

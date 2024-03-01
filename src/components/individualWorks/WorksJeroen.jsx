@@ -62,7 +62,7 @@ export default function WorksJeroen() {
   bakedPiece04_Texture.flipY = false;
   return (
     <>
-      <SelectMoveObject isPivot={isContorl.piece01}>
+      <SelectMoveObject isPivot={isContorl.piece01} anchor={[0, -0.7, 0]}>
         <mesh
           geometry={piece01.nodes.exportJBPiece01.geometry}
           rotation={[0, -Math.PI * 0.5, 0]}
@@ -76,7 +76,7 @@ export default function WorksJeroen() {
         </mesh>
       </SelectMoveObject>
 
-      <SelectMoveObject isPivot={isContorl.piece02}>
+      <SelectMoveObject isPivot={isContorl.piece02} anchor={[0, -0.5, 0]}>
         <mesh
           geometry={piece02.nodes.exportJBPiece02.geometry}
           rotation={[0, -Math.PI * 0.5, 0]}
@@ -90,7 +90,11 @@ export default function WorksJeroen() {
         </mesh>
       </SelectMoveObject>
 
-      <SelectMoveObject isPivot={isContorl.piece03a}>
+      <SelectMoveObject
+        isPivot={isContorl.piece03a}
+        anchor={[0, -0.4, 0]}
+        rotation={[0, Math.PI, 0]}
+      >
         <mesh
           geometry={piece03a.nodes.exportJBPiece03a.geometry}
           rotation={[0, -Math.PI * 0.5, 0]}
@@ -101,7 +105,7 @@ export default function WorksJeroen() {
         </mesh>
       </SelectMoveObject>
 
-      <SelectMoveObject isPivot={isContorl.piece03b}>
+      <SelectMoveObject isPivot={isContorl.piece03b} anchor={[0, -0.4, 0]}>
         <mesh
           geometry={piece03b.nodes.exportJBPiece03b.geometry}
           rotation={[0, -Math.PI * 0.5, 0]}
@@ -115,7 +119,11 @@ export default function WorksJeroen() {
         </mesh>
       </SelectMoveObject>
 
-      <SelectMoveObject isPivot={isContorl.piece04}>
+      <SelectMoveObject
+        isPivot={isContorl.piece04}
+        anchor={[0, -0.4, 0]}
+        rotation={[0, -Math.PI * 0.5, 0]}
+      >
         <mesh
           geometry={piece04.nodes.exportJBPiece04.geometry}
           rotation={[0, -Math.PI * 0.5, 0]}
