@@ -1,4 +1,4 @@
-# OBJECT Rotterdam Floor Planning Tool
+# OBJECT Rotterdam 2024 - Floor Planning Tool
 
 🛠️ **a live 3D web platform of exhibition floor planning built with Three.js, React Three Fiber, and WebGL.**  
 🔗 **Live Demo:** [floor planning](https://object-rotterdam-2024-floor-plan.vercel.app/)  
