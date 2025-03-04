@@ -12,7 +12,7 @@ This is a 3D web platform that allows participants to **experiment with their ex
 
 - 🌐 **Built with:** Three.js, React Three Fiber, WebGL, GLSL
 
-![GIT Preview](/public/videos/portfolio-website/portfolio-website-preview.gif)
+![GIT Preview](/public/preview.gif)
 
 ---
 
