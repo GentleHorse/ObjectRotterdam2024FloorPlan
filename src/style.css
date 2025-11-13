@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300&family=Inter:wght@400;700&display=swap");
 
 html,
 body {
@@ -114,4 +115,276 @@ body {
 
 .designers button:hover {
   color: #212270;
+}
+
+.camera-icon {
+  position: fixed;
+  bottom: 60px;
+  z-index: 20;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.camera-icon-container {
+  border: 2.5px solid white;
+  border-radius: 9999px;
+  padding: 10px;
+  opacity: 0.65;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: opacity 0.3s ease, transform 0.1s ease;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.camera-icon-container:hover {
+  opacity: 1;
+}
+
+.camera-icon-container:active {
+  transform: scale(0.95);
+  opacity: 1;
+}
+
+.camera-icon-image {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Loading Screen */
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.loading-content h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: white;
+  margin: 0;
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* How to Use Modal */
+.how-to-use-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(145, 143, 143, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.modal-content {
+  position: relative;
+  z-index: 101;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1440px;
+  width: 100%;
+}
+
+.modal-title {
+  padding-top: 132px;
+  padding-bottom: 0;
+  text-align: center;
+}
+
+.modal-title h1 {
+  font-family: "Inria Serif", serif;
+  font-size: 64px;
+  font-weight: 300;
+  color: white;
+  margin: 0;
+  line-height: normal;
+}
+
+.modal-description {
+  padding: 72px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 100%;
+}
+
+.modal-description p {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  margin: 0;
+  line-height: normal;
+}
+
+.modal-description strong {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+
+.modal-images {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 84px;
+}
+
+.modal-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.modal-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.modal-button {
+  background-color: white;
+  color: black;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 1000px;
+  cursor: pointer;
+  opacity: 0.9;
+  transition: opacity 0.3s ease, transform 0.1s ease;
+  white-space: nowrap;
+}
+
+.modal-button:hover {
+  opacity: 1;
+}
+
+.modal-button:active {
+  transform: scale(0.98);
+}
+
+/* Responsive Styles for Modal */
+@media (max-width: 1024px) {
+  .modal-title {
+    padding-top: 120px;
+  }
+
+  .modal-title h1 {
+    font-size: 48px;
+  }
+
+  .modal-description {
+    padding: 48px 20px;
+  }
+
+  .modal-description p {
+    font-size: 18px;
+  }
+
+  .modal-images {
+    gap: 20px;
+    margin-bottom: 60px;
+  }
+
+  .modal-image {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .camera-icon {
+    display: none;
+  }
+
+  .modal-title {
+    padding-top: 100px;
+  }
+
+  .modal-title h1 {
+    font-size: 36px;
+  }
+
+  .modal-description {
+    padding: 32px 20px;
+  }
+
+  .modal-description p {
+    font-size: 16px;
+  }
+
+  .modal-images {
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  .modal-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .modal-image:nth-child(3) {
+    display: none;
+  }
+
+  .modal-button {
+    font-size: 12px;
+    padding: 16px 32px;
+  }
 }

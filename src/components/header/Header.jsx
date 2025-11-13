@@ -16,13 +16,13 @@ export default function Header() {
         </div>
       </section>
 
-      <section className="instruction">
+      {/* <section className="instruction">
         <h1>How to use?</h1>
         <p>Click an object to activate/deactivate a pivot control.</p>
         <p>
           [!] Object modifications with pivot controls are not saved automatically.
         </p>
-      </section>
+      </section> */}
     </header>
   );
 }
