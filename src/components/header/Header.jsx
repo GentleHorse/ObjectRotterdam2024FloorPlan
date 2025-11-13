@@ -4,7 +4,7 @@ import titleLogoImage from "../../../public/title-logo.png";
 export default function Header() {
   return (
     <header className="floor-plan-header">
-      <section>
+      <div>
         <div>
           <a href="https://objectrotterdam.com/" target="_blank">
             <img src={logoImage} className="logo" />
@@ -14,15 +14,17 @@ export default function Header() {
         <div>
           <p>2-4 February, 2024</p>
         </div>
-      </section>
+      </div>
 
-      {/* <section className="instruction">
-        <h1>How to use?</h1>
-        <p>Click an object to activate/deactivate a pivot control.</p>
-        <p>
-          [!] Object modifications with pivot controls are not saved automatically.
-        </p>
-      </section> */}
+      <div>
+        <a 
+          href="https://object-rotterdam-2024-digital-archive.vercel.app/" 
+          className="digital-archive-link"
+        >
+          <div className="digital-archive-overlay"></div>
+          <p>Digital Archive</p>
+        </a>
+      </div>
     </header>
   );
 }

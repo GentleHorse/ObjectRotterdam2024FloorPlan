@@ -9,11 +9,11 @@ body {
 .floor-plan-header {
   width: 100vw;
   position: fixed;
-  margin-top: 20px;
-  margin-left: 20px;
+  padding: 20px;
   z-index: 10;
   display: flex;
   justify-content: space-between;
+  box-sizing: border-box;
 }
 
 .floor-plan-header a {
@@ -37,6 +37,48 @@ body {
 .floor-plan-header p {
   font-family: "Roboto", sans-serif;
   margin-top: 10px;
+}
+
+.digital-archive-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+  overflow: hidden;
+  background-image: url('/digital-archive.webp');
+  background-size: 148.87%;
+  background-position: center;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.digital-archive-link:hover {
+  transform: scale(1.02);
+}
+
+.digital-archive-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.digital-archive-link p {
+  position: relative;
+  z-index: 2;
+  font-family: "Inter", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .instruction {
@@ -351,6 +393,15 @@ body {
 @media (max-width: 768px) {
   .camera-icon {
     display: none;
+  }
+
+  .digital-archive-link {
+    width: 80px;
+    height: 80px;
+  }
+
+  .digital-archive-link p {
+    font-size: 7.5px;
   }
 
   .modal-title {
