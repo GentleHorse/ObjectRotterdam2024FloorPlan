@@ -18,7 +18,7 @@ export default function Footer() {
           <a href="https://www.satomiminoshima.com/" target="_blank">
             <button>Satomi Minoshima</button>
           </a>
-          <a href="https://www.toshihito.design/" target="_blank">
+          <a href="https://toshihito-endo.com/" target="_blank">
             <button>Toshihito Endo</button>
           </a>
       </section>
