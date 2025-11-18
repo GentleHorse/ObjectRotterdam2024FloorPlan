@@ -281,14 +281,14 @@ body {
 }
 
 .modal-title {
-  padding-top: 132px;
+  padding-top: 17.5dvh;
   padding-bottom: 0;
   text-align: center;
 }
 
 .modal-title h1 {
   font-family: "Inria Serif", serif;
-  font-size: 64px;
+  font-size: 6.5dvh;
   font-weight: 300;
   color: white;
   margin: 0;
@@ -296,17 +296,17 @@ body {
 }
 
 .modal-description {
-  padding: 72px 0;
+  padding: 7.2dvh 0;
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 1.8dvh;
   max-width: 100%;
 }
 
 .modal-description p {
   font-family: "Inter", sans-serif;
-  font-size: 20px;
+  font-size: 2dvh;
   font-weight: 400;
   color: white;
   margin: 0;
@@ -327,8 +327,8 @@ body {
 }
 
 .modal-image {
-  width: 250px;
-  height: 250px;
+  width: 25dvh;
+  height: 25dvh;
   border-radius: 5px;
   overflow: hidden;
 }
